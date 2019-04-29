@@ -12,7 +12,7 @@
 ### 本篇内容
 + 前端数据：VueJS2.0
 + 前端UI: ELEMENT-UI, AMAZEUI
-+ 后端：Springboot 1.4.0 Released
++ 后端：JAVA1.8 & Springboot 1.4.0 Released
 + 数据库：MariaDB 10.2
 + 运行环境：centos 7.3
 ### 额外内容
