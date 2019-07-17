@@ -40,6 +40,7 @@ https://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 查看是否安装成功：
 打开命令行窗口，输入java与javac命令查看是否出现有效信息。
+![success](https://i.loli.net/2019/07/17/5d2ef702c375331626.png)
 
 ```
 这里缺少图片
