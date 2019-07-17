@@ -1,0 +1,30 @@
+server:
+  port: 8888
+  session:
+    timeout: 10
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/myblog
+    username: root
+    password: 1qaz2wsx
+    driver-class-name: org.mariadb.jdbc.Driver
+    tomcat:
+      max-idle: 5
+      max-wait: 2000
+      min-idle: 1
+      initial-size: 3
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  thymeleaf:
+    enabled: false
+
+# mybatis config
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.estheim.myblog.Entity

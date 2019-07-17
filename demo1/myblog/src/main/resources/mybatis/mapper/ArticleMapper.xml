@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.estheim.myblog.Mapper.ArticleMapper">
+    <resultMap id="Article" type="com.estheim.myblog.Entity.Article">
+        <id column="article_id" property="article_id" jdbcType="INTEGER"/>
+        <id column="article_title" property="article_title" jdbcType="VARCHAR"/>
+        <id column="article_author" property="article_author" jdbcType="VARCHAR"/>
+        <id column="article_content" property="article_content" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getArticle" resultMap="Article">
+        SELECT
+            article_id, article_title, article_author, article_content
+        FROM
+            article
+        WHERE
+            article_id=#{article_id}
+    </select>
+</mapper>
